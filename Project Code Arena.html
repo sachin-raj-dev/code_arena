@@ -892,6 +892,63 @@
         <div class="sidebar-logo">
           <div class="logo-mark">⚔ CodeArena</div>
           <div class="logo-sub">product document · v1.0 · june 2026</div>
+          <div style="margin-top: 10px; padding: 7px 0 0; border-top: 1px solid var(--border)">
+            <div
+              style="
+                font-size: 9px;
+                color: var(--text3);
+                font-family: var(--mono);
+                margin-bottom: 4px;
+                letter-spacing: 0.06em;
+              "
+            >
+              PATCH HISTORY
+            </div>
+            <div style="display: flex; align-items: center; gap: 6px; padding: 4px 0">
+              <div
+                style="
+                  width: 5px;
+                  height: 5px;
+                  border-radius: 50%;
+                  background: var(--green);
+                  flex-shrink: 0;
+                "
+              ></div>
+              <div style="font-size: 10px; color: var(--text2)">v1.0 · 23 Jun 2026</div>
+              <div
+                style="
+                  font-size: 9px;
+                  color: var(--text3);
+                  margin-left: auto;
+                  font-family: var(--mono);
+                "
+              >
+                Initial
+              </div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 6px; padding: 4px 0">
+              <div
+                style="
+                  width: 5px;
+                  height: 5px;
+                  border-radius: 50%;
+                  background: var(--accent2);
+                  flex-shrink: 0;
+                "
+              ></div>
+              <div style="font-size: 10px; color: var(--text2)">v1.1 · 23 Jun 2026</div>
+              <div
+                style="
+                  font-size: 9px;
+                  color: var(--text3);
+                  margin-left: auto;
+                  font-family: var(--mono);
+                "
+              >
+                +Economics
+              </div>
+            </div>
+          </div>
         </div>
         <div class="nav-group">
           <div class="nav-group-label">Origin</div>
@@ -943,6 +1000,17 @@
           <a class="nav-a" href="#s10">Global Expansion</a>
           <a class="nav-a" href="#s11">Revenue Model</a>
           <a class="nav-a" href="#s12">Build Roadmap</a>
+        </div>
+        <div class="nav-group">
+          <div class="nav-group-label">Economics</div>
+          <a class="nav-a" href="#s13"
+            ><div class="ndot" style="background: var(--amber)"></div>
+            Unit Economics</a
+          >
+          <a class="nav-a" href="#s13-income">Revenue Streams</a>
+          <a class="nav-a" href="#s13-expenses">Expenses</a>
+          <a class="nav-a" href="#s13-phases">Phase P&L</a>
+          <a class="nav-a" href="#s13-break">Break-even</a>
         </div>
       </nav>
 
@@ -5341,6 +5409,818 @@
               Judge0 + Claude API
             </p>
           </div>
+        </div>
+        <!-- end .content -->
+        <!-- ╔═══════════════════════════════════════════════════════════════════╗ -->
+        <!-- ║  CODEARENA PRODUCT DOCUMENT — PART 6 OF 6                        ║ -->
+        <!-- ║  CONTAINS TWO THINGS:                                             ║ -->
+        <!-- ║  1. SIDEBAR PATCH — copy the <div class="nav-group"> block below  ║ -->
+        <!-- ║     and paste it inside the sidebar in Part 1, after the last     ║ -->
+        <!-- ║     existing <div class="nav-group"> block, before </nav>         ║ -->
+        <!-- ║  2. ECONOMICS SECTION — paste after Part 5, before </main>        ║ -->
+        <!-- ╚═══════════════════════════════════════════════════════════════════╝ -->
+
+        <!-- ════════════════════════════════════════════════
+     SIDEBAR PATCH — paste inside <nav class="sidebar"> in Part 1
+     Also paste the iteration block right below .sidebar-logo in Part 1
+     ════════════════════════════════════════════════ -->
+
+        <!--
+      STEP 1 — In Part 1, find this line inside .sidebar-logo:
+        <div class="logo-sub">product document · v1.0 · june 2026</div>
+
+      Replace it with:
+        <div class="logo-sub">product document · v1.0 · june 2026</div>
+        <div style="margin-top:10px;padding:7px 0 0;border-top:1px solid var(--border)">
+          <div style="font-size:9px;color:var(--text3);font-family:var(--mono);margin-bottom:4px;letter-spacing:0.06em">PATCH HISTORY</div>
+          <div style="display:flex;align-items:center;gap:6px;padding:4px 0">
+            <div style="width:5px;height:5px;border-radius:50%;background:var(--green);flex-shrink:0"></div>
+            <div style="font-size:10px;color:var(--text2)">v1.0 · 23 Jun 2026</div>
+            <div style="font-size:9px;color:var(--text3);margin-left:auto;font-family:var(--mono)">Initial</div>
+          </div>
+          <div style="display:flex;align-items:center;gap:6px;padding:4px 0">
+            <div style="width:5px;height:5px;border-radius:50%;background:var(--accent2);flex-shrink:0"></div>
+            <div style="font-size:10px;color:var(--text2)">v1.1 · 23 Jun 2026</div>
+            <div style="font-size:9px;color:var(--text3);margin-left:auto;font-family:var(--mono)">+Economics</div>
+          </div>
+        </div>
+
+      STEP 2 — In Part 1, find the last </div> closing the last .nav-group before </nav>
+      Add this new nav-group right after it (before </nav>):
+      -->
+
+        <!--
+      <div class="nav-group">
+        <div class="nav-group-label">Economics</div>
+        <a class="nav-a" href="#s13"><div class="ndot" style="background:var(--amber)"></div>Unit Economics</a>
+        <a class="nav-a" href="#s13-income">Revenue Streams</a>
+        <a class="nav-a" href="#s13-expenses">Expenses</a>
+        <a class="nav-a" href="#s13-phases">Phase P&L</a>
+        <a class="nav-a" href="#s13-break">Break-even</a>
+      </div>
+      -->
+
+        <!-- ════════════════════════════════════════════════
+     ECONOMICS SECTION — paste as new content block
+     ════════════════════════════════════════════════ -->
+
+        <div class="content">
+          <!-- ═══════════════════════════════════════════ -->
+          <!-- SECTION 13: ECONOMICS -->
+          <!-- ═══════════════════════════════════════════ -->
+          <div class="section" id="s13">
+            <!-- Iteration badge -->
+            <div
+              style="
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+                background: rgba(108, 99, 255, 0.1);
+                border: 1px solid rgba(108, 99, 255, 0.22);
+                border-radius: 6px;
+                padding: 5px 11px;
+                margin-bottom: 1.25rem;
+              "
+            >
+              <span style="font-size: 10px; font-family: var(--mono); color: var(--accent2)"
+                >📋 v1.1 patch</span
+              >
+              <span style="width: 1px; height: 12px; background: var(--border2)"></span>
+              <span style="font-size: 10px; color: var(--text3)">Added 23 Jun 2026</span>
+              <span style="width: 1px; height: 12px; background: var(--border2)"></span>
+              <span style="font-size: 10px; color: var(--text3)">Iteration 2 of this document</span>
+            </div>
+
+            <div class="sec-eye">13 · unit economics</div>
+            <div class="sec-title">Economics — Income, Expenses & Profitability</div>
+            <div class="sec-sub">
+              A full breakdown of every rupee CodeArena earns and spends across all 4 build phases.
+              Built from the actual tech stack costs, realistic conversion benchmarks from
+              comparable products (Chess.com, LeetCode, Duolingo), and India-specific pricing
+              research.
+            </div>
+
+            <div class="info amber">
+              <div class="info-title">Assumptions this model is built on</div>
+              All costs in ₹/month unless noted. Exchange rate: $1 = ₹84. Conversion benchmarks from
+              Chess.com (3.5% free→paid), Duolingo (5% to Super), LeetCode India (~4%). India App
+              Store/Play Store billing takes 15–30% cut handled by RevenueCat. Claude API pricing as
+              of mid-2025. Firebase/GCP India region pricing. All figures are conservative estimates
+              — actual costs will vary.
+            </div>
+
+            <!-- ── INCOME ── -->
+            <div class="section" id="s13-income">
+              <h3>Revenue Streams — Full Breakdown</h3>
+              <p>
+                9 streams across 4 phases. The model is deliberately not dependent on any single
+                stream — if B2B is slow, subscriptions carry; if subscriptions are low, IAPs fill
+                the gap.
+              </p>
+
+              <table class="tbl">
+                <thead>
+                  <tr>
+                    <th>Stream</th>
+                    <th>Price Point</th>
+                    <th>Phase</th>
+                    <th>Month 3 (1K users)</th>
+                    <th>Month 8 (10K users)</th>
+                    <th>Month 24 (200K users)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Pro subscription</td>
+                    <td>₹199/mo</td>
+                    <td><span class="pdot d1"></span> MVP</td>
+                    <td>~20 subs = <strong>₹3,980</strong></td>
+                    <td>~400 subs = <strong>₹79,600</strong></td>
+                    <td>~7,000 subs = <strong>₹13.9L</strong></td>
+                  </tr>
+                  <tr>
+                    <td>Elite subscription</td>
+                    <td>₹499/mo</td>
+                    <td><span class="pdot d2"></span> Phase 2</td>
+                    <td>—</td>
+                    <td>~60 subs = <strong>₹29,940</strong></td>
+                    <td>~1,400 subs = <strong>₹6.98L</strong></td>
+                  </tr>
+                  <tr>
+                    <td>Student plan</td>
+                    <td>₹99/mo</td>
+                    <td><span class="pdot d1"></span> MVP</td>
+                    <td>~30 subs = <strong>₹2,970</strong></td>
+                    <td>~500 subs = <strong>₹49,500</strong></td>
+                    <td>~8,000 subs = <strong>₹7.92L</strong></td>
+                  </tr>
+                  <tr>
+                    <td>Tournament entry IAP</td>
+                    <td>₹49/entry</td>
+                    <td><span class="pdot d2"></span> Phase 2</td>
+                    <td>—</td>
+                    <td>~200 entries/wk × 4 = <strong>₹39,200</strong></td>
+                    <td>~2,000/wk × 4 = <strong>₹3.92L</strong></td>
+                  </tr>
+                  <tr>
+                    <td>Streak shields IAP</td>
+                    <td>₹29 / 3 shields</td>
+                    <td><span class="pdot d2"></span> Phase 2</td>
+                    <td>—</td>
+                    <td>~100 purchases = <strong>₹2,900</strong></td>
+                    <td>~3,000/mo = <strong>₹87,000</strong></td>
+                  </tr>
+                  <tr>
+                    <td>Cosmetics / themes IAP</td>
+                    <td>₹29–199/item</td>
+                    <td><span class="pdot d3"></span> Phase 3</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>~500 purchases avg ₹79 = <strong>₹39,500</strong></td>
+                  </tr>
+                  <tr>
+                    <td>B2B campus contests</td>
+                    <td>₹25K–2L/contest</td>
+                    <td><span class="pdot d3"></span> Phase 3</td>
+                    <td>—</td>
+                    <td>1 contest = <strong>₹25,000</strong></td>
+                    <td>4/mo avg ₹75K = <strong>₹3L</strong></td>
+                  </tr>
+                  <tr>
+                    <td>Institute white-label</td>
+                    <td>₹3–8L/yr</td>
+                    <td><span class="pdot d3"></span> Phase 3</td>
+                    <td>—</td>
+                    <td>1 institute = <strong>₹41,666/mo</strong></td>
+                    <td>8 institutes avg ₹5L/yr = <strong>₹3.33L/mo</strong></td>
+                  </tr>
+                  <tr>
+                    <td>Gift subscriptions</td>
+                    <td>₹199–499</td>
+                    <td><span class="pdot d3"></span> Phase 3</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>~200/mo avg ₹249 = <strong>₹49,800</strong></td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div class="card-grid">
+                <div class="card">
+                  <div class="card-icon">📅</div>
+                  <div class="card-title">Month 3 total MRR</div>
+                  <div class="card-desc">
+                    1,000 users, bots still filling matches, free-to-Pro conversion just starting.
+                    Mostly student + Pro subs.
+                  </div>
+                  <span class="tag tg">~₹7,000–15,000</span>
+                </div>
+                <div class="card">
+                  <div class="card-icon">📈</div>
+                  <div class="card-title">Month 8 total MRR</div>
+                  <div class="card-desc">
+                    10K users, tournaments running weekly, first B2B institute signed. IAPs
+                    contributing meaningfully.
+                  </div>
+                  <span class="tag tb">~₹2.5L–4L</span>
+                </div>
+                <div class="card">
+                  <div class="card-icon">🚀</div>
+                  <div class="card-title">Month 24 total MRR</div>
+                  <div class="card-desc">
+                    200K users, 8+ institutes on white-label, 4 B2B contests/month, full cosmetic
+                    marketplace live.
+                  </div>
+                  <span class="tag tp">~₹35L–50L</span>
+                </div>
+                <div class="card">
+                  <div class="card-icon">🏆</div>
+                  <div class="card-title">Annual run rate (Yr 2)</div>
+                  <div class="card-desc">
+                    Conservative Year 2 ARR. Chess.com reference: $100M+/year. This is the realistic
+                    India-first floor.
+                  </div>
+                  <span class="tag tg">₹4Cr–6Cr/yr</span>
+                </div>
+              </div>
+
+              <div class="info">
+                <div class="info-title">Revenue mix target at steady state (Month 18+)</div>
+                Subscriptions (Pro + Elite + Student): 55% of MRR. B2B (contests + white-label): 30%
+                of MRR. IAPs (shields + cosmetics + tournament entry): 15% of MRR. This
+                diversification means no single churn event destroys the business.
+              </div>
+            </div>
+
+            <!-- ── EXPENSES ── -->
+            <div class="section" id="s13-expenses">
+              <h3>Expenses — Full Cost Breakdown</h3>
+              <p>
+                Organized by category. Phase 1 (MVP) expenses are lean — solo developer, self-hosted
+                infrastructure. Costs scale as users grow, but margins improve because most costs
+                are semi-fixed.
+              </p>
+
+              <h4>Infrastructure & Cloud (monthly)</h4>
+              <table class="tbl">
+                <thead>
+                  <tr>
+                    <th>Service</th>
+                    <th>What it does</th>
+                    <th>Phase 1 (MVP)</th>
+                    <th>Phase 2 (10K users)</th>
+                    <th>Phase 3 (50K users)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>DigitalOcean — Judge0</td>
+                    <td>
+                      Code execution server. Mumbai region. Droplet: 4 vCPU, 8GB RAM handles ~200
+                      concurrent executions
+                    </td>
+                    <td>₹3,360/mo ($40)</td>
+                    <td>₹6,720/mo ($80 — upgrade)</td>
+                    <td>₹16,800/mo ($200 — 2 droplets)</td>
+                  </tr>
+                  <tr>
+                    <td>Firebase Spark → Blaze</td>
+                    <td>
+                      Firestore reads/writes, RTDB real-time sync, Cloud Functions, FCM push, Auth.
+                      Pay-as-you-go after free tier.
+                    </td>
+                    <td>₹0–840/mo (free tier covers MVP)</td>
+                    <td>₹4,200–8,400/mo</td>
+                    <td>₹16,800–25,200/mo</td>
+                  </tr>
+                  <tr>
+                    <td>PostgreSQL (DigitalOcean Managed)</td>
+                    <td>
+                      ELO history, match records, problem bank, user profiles. TimescaleDB
+                      extension.
+                    </td>
+                    <td>₹1,680/mo ($20 — Basic)</td>
+                    <td>₹5,040/mo ($60 — Standard)</td>
+                    <td>₹12,600/mo ($150 — Performance)</td>
+                  </tr>
+                  <tr>
+                    <td>Redis (DigitalOcean Managed)</td>
+                    <td>Matchmaking queue, session tokens, rate limiting, BullMQ job queue.</td>
+                    <td>₹840/mo ($10)</td>
+                    <td>₹2,520/mo ($30)</td>
+                    <td>₹5,040/mo ($60)</td>
+                  </tr>
+                  <tr>
+                    <td>FastAPI backend (DigitalOcean App Platform)</td>
+                    <td>Backend API server. Auto-scaling. 2 containers for high availability.</td>
+                    <td>₹1,680/mo ($20)</td>
+                    <td>₹5,040/mo ($60)</td>
+                    <td>₹12,600/mo ($150)</td>
+                  </tr>
+                  <tr>
+                    <td>CDN + Storage (DigitalOcean Spaces)</td>
+                    <td>Avatar images, AI video breakdowns, replay data. Object storage.</td>
+                    <td>₹420/mo ($5)</td>
+                    <td>₹1,680/mo ($20)</td>
+                    <td>₹5,040/mo ($60)</td>
+                  </tr>
+                  <tr>
+                    <td>Next.js web (Vercel)</td>
+                    <td>Web platform hosting. Serverless. Auto-scales. India edge network.</td>
+                    <td>₹0 (free tier)</td>
+                    <td>₹1,680/mo ($20 — Pro)</td>
+                    <td>₹8,400/mo ($100 — Team)</td>
+                  </tr>
+                  <tr style="font-weight: 600">
+                    <td>Infrastructure Total</td>
+                    <td></td>
+                    <td>~₹8,000/mo</td>
+                    <td>~₹27,000/mo</td>
+                    <td>~₹77,000/mo</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <h4>Third-Party APIs (monthly, usage-based)</h4>
+              <table class="tbl">
+                <thead>
+                  <tr>
+                    <th>API</th>
+                    <th>Purpose</th>
+                    <th>Phase 1 cost</th>
+                    <th>Phase 2 cost</th>
+                    <th>Phase 3 cost</th>
+                    <th>Pricing basis</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Claude API (Anthropic)</td>
+                    <td>
+                      Post-match AI review (streaming), weekly study plans, AI chat tutor, error
+                      pattern analysis
+                    </td>
+                    <td>₹5,040/mo (~500 reviews/day at $0.003 avg)</td>
+                    <td>₹25,200/mo (~2,500/day)</td>
+                    <td>₹84,000/mo (~10K/day, Pro only)</td>
+                    <td>
+                      claude-sonnet-4-6: ~$3/million input tokens, ~$15/million output. Avg review ≈
+                      2K tokens in + 800 out ≈ $0.018/review
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>ElevenLabs API</td>
+                    <td>
+                      TTS voice for AI video breakdowns (Pro only). ~300 words/video = ~450 chars
+                    </td>
+                    <td>₹0 (Phase 3 feature)</td>
+                    <td>₹0 (Phase 3 feature)</td>
+                    <td>₹16,800/mo (~1K videos/mo at $0.20 each)</td>
+                    <td>$0.20/1K chars. Pro users only. Async — no latency pressure.</td>
+                  </tr>
+                  <tr>
+                    <td>Firebase FCM (push notifications)</td>
+                    <td>Streak reminders, rival notifications, tournament alerts</td>
+                    <td>₹0 (free)</td>
+                    <td>₹0 (free)</td>
+                    <td>₹0 (free for all volumes)</td>
+                    <td>FCM is free — no per-notification cost at any scale</td>
+                  </tr>
+                  <tr>
+                    <td>SendGrid (email)</td>
+                    <td>Weekly performance digest emails, tournament result notifications</td>
+                    <td>₹0 (free 100/day)</td>
+                    <td>₹1,260/mo (Essentials $15)</td>
+                    <td>₹2,520/mo (Pro $30)</td>
+                    <td>$15/mo for 40K emails. $30/mo for 100K emails.</td>
+                  </tr>
+                  <tr>
+                    <td>RevenueCat</td>
+                    <td>
+                      Subscription management, entitlement checks, Play Store + App Store billing,
+                      receipt validation
+                    </td>
+                    <td>₹0 (free up to $10K MTR)</td>
+                    <td>₹0–4,200/mo (Cross = $0 up to $2.5K MTR; Scale at $99/mo)</td>
+                    <td>₹8,400/mo ($99/mo Scale plan + 0.75% fee above $10K MTR)</td>
+                    <td>Free up to $2.5K MTR. $99/mo for Scale. 0.75% fee above $10K MTR.</td>
+                  </tr>
+                  <tr style="font-weight: 600">
+                    <td>API Total</td>
+                    <td></td>
+                    <td>~₹5,000/mo</td>
+                    <td>~₹30,000/mo</td>
+                    <td>~₹1,10,000/mo</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <h4>App Store Fees (one-time + revenue share)</h4>
+              <table class="tbl">
+                <thead>
+                  <tr>
+                    <th>Fee</th>
+                    <th>Amount</th>
+                    <th>Notes</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Google Play Developer account</td>
+                    <td>$25 one-time (~₹2,100)</td>
+                    <td>Paid once. Covers all apps forever.</td>
+                  </tr>
+                  <tr>
+                    <td>Apple Developer Program</td>
+                    <td>$99/year (~₹8,316/yr = ₹693/mo)</td>
+                    <td>Required for App Store + TestFlight. Annual renewal.</td>
+                  </tr>
+                  <tr>
+                    <td>Google Play commission</td>
+                    <td>15–30% of subscription/IAP revenue</td>
+                    <td>
+                      15% for first ₹1Cr/yr revenue per app (Small Business Program). 30% standard.
+                      RevenueCat handles splits.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Apple App Store commission</td>
+                    <td>15–30% of subscription/IAP revenue</td>
+                    <td>
+                      15% for small devs earning under $1M/yr. 30% after year 1 of subscription.
+                      RevenueCat handles.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div class="info coral">
+                <div class="info-title">Platform commission impact — important</div>
+                At ₹10L MRR from in-app purchases: 15–20% platform cut = ₹1.5L–2L/month to Apple +
+                Google. Plan for this from day one. Pricing your ₹199/mo Pro actually nets ₹170
+                after 15% cut (small dev rate). At scale (30% cut): ₹139 net. Web subscriptions
+                bypass this entirely — direct Razorpay/Stripe integration nets 98% of revenue.
+                Promote web subscriptions for power users.
+              </div>
+
+              <h4>People & Tools (monthly)</h4>
+              <table class="tbl">
+                <thead>
+                  <tr>
+                    <th>Cost</th>
+                    <th>Phase 1</th>
+                    <th>Phase 2</th>
+                    <th>Phase 3</th>
+                    <th>Notes</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Your own salary / opportunity cost</td>
+                    <td>₹0 (solo build)</td>
+                    <td>₹0–1L/mo (if taking salary from revenue)</td>
+                    <td>₹1.5L/mo</td>
+                    <td>Track this even as sole founder — it's real cost</td>
+                  </tr>
+                  <tr>
+                    <td>First hire: backend/DevOps engineer</td>
+                    <td>₹0</td>
+                    <td>₹60,000–80,000/mo</td>
+                    <td>₹80,000/mo</td>
+                    <td>Hire when you hit Month 6 and revenue &gt;₹2L MRR</td>
+                  </tr>
+                  <tr>
+                    <td>Content creation (problem bank)</td>
+                    <td>₹5,000–10,000/mo (freelance)</td>
+                    <td>₹15,000–20,000/mo</td>
+                    <td>₹30,000/mo (2 part-time curators)</td>
+                    <td>Writing + validating 50–100 problems/month</td>
+                  </tr>
+                  <tr>
+                    <td>GitHub Copilot / Cursor AI</td>
+                    <td>₹1,680/mo ($20)</td>
+                    <td>₹1,680/mo</td>
+                    <td>₹5,040/mo ($60 for team)</td>
+                    <td>Massively accelerates solo build speed</td>
+                  </tr>
+                  <tr>
+                    <td>Figma (design)</td>
+                    <td>₹0 (free tier)</td>
+                    <td>₹0 (free tier)</td>
+                    <td>₹1,200/mo (Professional)</td>
+                    <td>Free tier covers solo dev. Upgrade when hiring designer.</td>
+                  </tr>
+                  <tr>
+                    <td>Linear / Jira (project mgmt)</td>
+                    <td>₹0 (Linear free)</td>
+                    <td>₹0 (Linear free)</td>
+                    <td>₹1,680/mo</td>
+                    <td>Linear free covers small team. Jira when &gt;5 people.</td>
+                  </tr>
+                  <tr>
+                    <td>Domain + SSL</td>
+                    <td>₹1,500/yr (~₹125/mo)</td>
+                    <td>₹125/mo</td>
+                    <td>₹125/mo</td>
+                    <td>codearena.app or codearena.in on Namecheap</td>
+                  </tr>
+                  <tr>
+                    <td>Customer support (Crisp / Intercom)</td>
+                    <td>₹0 (Crisp free)</td>
+                    <td>₹2,500/mo</td>
+                    <td>₹5,000/mo</td>
+                    <td>Start with Crisp (free). Upgrade when tickets &gt;50/day.</td>
+                  </tr>
+                  <tr style="font-weight: 600">
+                    <td>People & Tools Total</td>
+                    <td>~₹7,000–15,000/mo</td>
+                    <td>~₹80,000–1,20,000/mo</td>
+                    <td>~₹2,00,000–2,50,000/mo</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <h4>Marketing & Growth (monthly)</h4>
+              <table class="tbl">
+                <thead>
+                  <tr>
+                    <th>Channel</th>
+                    <th>Phase 1</th>
+                    <th>Phase 2</th>
+                    <th>Phase 3</th>
+                    <th>Notes</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>College ambassador program</td>
+                    <td>₹10,000/mo (10 campuses × ₹1K)</td>
+                    <td>₹30,000/mo (30 campuses)</td>
+                    <td>₹75,000/mo</td>
+                    <td>Vouchers + free Elite for ambassadors. Highest ROI channel.</td>
+                  </tr>
+                  <tr>
+                    <td>Google UAC / Play Store ads</td>
+                    <td>₹0</td>
+                    <td>₹20,000–40,000/mo</td>
+                    <td>₹1,00,000/mo</td>
+                    <td>Start only after organic plateau. Target ₹150–300 CPI.</td>
+                  </tr>
+                  <tr>
+                    <td>LinkedIn / Twitter content</td>
+                    <td>₹0 (organic)</td>
+                    <td>₹0 (organic)</td>
+                    <td>₹10,000/mo (freelance writer)</td>
+                    <td>Build in public. Share ELO growth charts. Organic reach is real.</td>
+                  </tr>
+                  <tr>
+                    <td>Referral program rewards</td>
+                    <td>₹5,000/mo (free Pro for referrers)</td>
+                    <td>₹20,000/mo</td>
+                    <td>₹50,000/mo</td>
+                    <td>Cost of giving free Pro weeks to top referrers</td>
+                  </tr>
+                  <tr style="font-weight: 600">
+                    <td>Marketing Total</td>
+                    <td>~₹15,000/mo</td>
+                    <td>~₹70,000–90,000/mo</td>
+                    <td>~₹2,35,000/mo</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- ── PHASE P&L ── -->
+            <div class="section" id="s13-phases">
+              <h3>Phase-by-Phase P&L Summary</h3>
+              <p>
+                This is the honest picture — including platform cuts, API costs that scale with
+                usage, and realistic conversion rates based on comparable products.
+              </p>
+
+              <table class="tbl">
+                <thead>
+                  <tr>
+                    <th>Phase</th>
+                    <th>Timeline</th>
+                    <th>Users</th>
+                    <th>Gross Revenue</th>
+                    <th>Platform Cut (avg 20%)</th>
+                    <th>Infrastructure</th>
+                    <th>APIs</th>
+                    <th>People+Mktg</th>
+                    <th>Net Profit</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Phase 1 — MVP</td>
+                    <td>Month 0–3</td>
+                    <td>0 → 1,000</td>
+                    <td>₹7,000–15,000</td>
+                    <td>₹1,400–3,000</td>
+                    <td>₹8,000</td>
+                    <td>₹5,000</td>
+                    <td>₹22,000</td>
+                    <td style="color: var(--coral)">–₹29,000 to –₹19,000</td>
+                  </tr>
+                  <tr>
+                    <td>Phase 2 — Growth</td>
+                    <td>Month 3–8</td>
+                    <td>1K → 10K</td>
+                    <td>₹2.5L–4L</td>
+                    <td>₹50,000–80,000</td>
+                    <td>₹27,000</td>
+                    <td>₹30,000</td>
+                    <td>₹1,90,000</td>
+                    <td style="color: var(--amber)">₹3,000 to ₹73,000</td>
+                  </tr>
+                  <tr>
+                    <td>Phase 3 — Platform</td>
+                    <td>Month 8–14</td>
+                    <td>10K → 50K</td>
+                    <td>₹10L–18L</td>
+                    <td>₹2L–3.6L</td>
+                    <td>₹77,000</td>
+                    <td>₹1,10,000</td>
+                    <td>₹4,85,000</td>
+                    <td style="color: var(--green)">₹3.28L to ₹8.28L</td>
+                  </tr>
+                  <tr>
+                    <td>Phase 4 — Scale</td>
+                    <td>Month 14–24</td>
+                    <td>50K → 200K</td>
+                    <td>₹35L–50L</td>
+                    <td>₹7L–10L</td>
+                    <td>₹2L–3L</td>
+                    <td>₹3L–5L</td>
+                    <td>₹8L–12L</td>
+                    <td style="color: var(--green)">₹15L–24L/mo</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div class="info green">
+                <div class="info-title">Margin profile at scale (200K users)</div>
+                Gross revenue ₹50L/mo. Platform cuts (avg 20%): ₹10L. Net revenue: ₹40L. Total costs
+                (infra + APIs + people + marketing): ₹18–22L. Net profit: ₹18–22L/mo (45–55% net
+                margin). This is comparable to Chess.com's reported ~60% margin profile. SaaS
+                margins improve with scale because infrastructure costs grow sub-linearly vs
+                revenue.
+              </div>
+            </div>
+
+            <!-- ── BREAK-EVEN ── -->
+            <div class="section" id="s13-break">
+              <h3>Break-Even Analysis</h3>
+              <p>
+                The critical question for a bootstrapped build: when does it stop costing money and
+                start making money?
+              </p>
+
+              <div class="card-grid">
+                <div class="card" style="border-color: var(--coral)">
+                  <div class="card-icon">🔴</div>
+                  <div class="card-title">Phase 1 (Month 0–3)</div>
+                  <div class="card-desc">
+                    Burning ₹20K–30K/month. This is the investment period. Revenue is near zero.
+                    Cover with savings or part-time consulting income. Do NOT raise external funding
+                    in this phase — you'll give away too much equity too cheap.
+                  </div>
+                  <span class="tag tc">Cash negative</span>
+                </div>
+                <div class="card" style="border-color: var(--amber)">
+                  <div class="card-icon">🟡</div>
+                  <div class="card-title">Break-even (Month 5–6)</div>
+                  <div class="card-desc">
+                    At ~3,000–4,000 users with ~3% Pro conversion (90–120 Pro subs) + student plans
+                    + IAPs, revenue covers infrastructure + API costs. Not yet covering your salary
+                    — but platform is self-sustaining.
+                  </div>
+                  <span class="tag ta">Infrastructure break-even</span>
+                </div>
+                <div class="card" style="border-color: var(--amber)">
+                  <div class="card-icon">🟠</div>
+                  <div class="card-title">Salary break-even (Month 7–8)</div>
+                  <div class="card-desc">
+                    At ~8,000–10,000 users, revenue covers infra + APIs + your ₹1L/month salary.
+                    First hire (backend engineer at ₹60K/mo) becomes possible at this point without
+                    burning reserves.
+                  </div>
+                  <span class="tag ta">Personal break-even</span>
+                </div>
+                <div class="card" style="border-color: var(--green)">
+                  <div class="card-icon">🟢</div>
+                  <div class="card-title">True profitability (Month 10–12)</div>
+                  <div class="card-desc">
+                    First B2B contract signed (₹3L/yr = ₹25K/mo). Team of 2 (you + backend). Monthly
+                    profit ₹50K–1.5L. Reinvest fully into content + college ambassador expansion.
+                    This is the flywheel starting.
+                  </div>
+                  <span class="tag tg">Net profitable</span>
+                </div>
+              </div>
+
+              <h3>Capital Required to Reach Break-even</h3>
+              <div class="info">
+                <div class="info-title">Total pre-break-even burn estimate</div>
+                Month 1–6 total burn: ~₹20K–30K/month × 6 months = ₹1.2L–1.8L. This is your personal
+                savings or consulting income needed before the product carries itself. If you run
+                out of capital before Month 5, keep 1 day/week of freelance consulting to cover
+                infra costs — don't shut down over ₹8K/month of Firebase bills. The break-even point
+                is close enough that cutting infrastructure cost by using more aggressive Firebase
+                free tier limits can extend runway significantly.
+              </div>
+
+              <h3>Key Financial Ratios at Target Scale (Month 24)</h3>
+              <div class="score-rows">
+                <div class="score-row">
+                  <div class="score-label">Gross margin (after platform cuts)</div>
+                  <div class="score-track">
+                    <div class="score-fill" style="width: 80%; background: var(--green)"></div>
+                  </div>
+                  <div class="score-val">~80%</div>
+                </div>
+                <div class="score-row">
+                  <div class="score-label">Net profit margin</div>
+                  <div class="score-track">
+                    <div class="score-fill" style="width: 50%; background: var(--green)"></div>
+                  </div>
+                  <div class="score-val">~50%</div>
+                </div>
+                <div class="score-row">
+                  <div class="score-label">API cost as % of revenue</div>
+                  <div class="score-track">
+                    <div class="score-fill" style="width: 10%; background: var(--blue)"></div>
+                  </div>
+                  <div class="score-val">~10%</div>
+                </div>
+                <div class="score-row">
+                  <div class="score-label">Free-to-Pro conversion rate (target)</div>
+                  <div class="score-track">
+                    <div class="score-fill" style="width: 35%; background: var(--accent)"></div>
+                  </div>
+                  <div class="score-val">3.5%</div>
+                </div>
+                <div class="score-row">
+                  <div class="score-label">B2B as % of revenue (target Yr 2)</div>
+                  <div class="score-track">
+                    <div class="score-fill" style="width: 30%; background: var(--amber)"></div>
+                  </div>
+                  <div class="score-val">30%</div>
+                </div>
+                <div class="score-row">
+                  <div class="score-label">Customer Acquisition Cost (CAC) target</div>
+                  <div class="score-track">
+                    <div class="score-fill" style="width: 15%; background: var(--coral)"></div>
+                  </div>
+                  <div class="score-val">₹150</div>
+                </div>
+                <div class="score-row">
+                  <div class="score-label">Lifetime Value (LTV) — Pro sub, 8mo avg</div>
+                  <div class="score-track">
+                    <div class="score-fill" style="width: 70%; background: var(--green)"></div>
+                  </div>
+                  <div class="score-val">₹1,592</div>
+                </div>
+                <div class="score-row">
+                  <div class="score-label">LTV:CAC ratio (target &gt;5x)</div>
+                  <div class="score-track">
+                    <div class="score-fill" style="width: 80%; background: var(--green)"></div>
+                  </div>
+                  <div class="score-val">10.6x</div>
+                </div>
+              </div>
+
+              <div class="info green">
+                <div class="info-title">Why the LTV:CAC ratio is strong</div>
+                LTV = ₹199/mo × 8 months average subscription length = ₹1,592. CAC through college
+                ambassadors = ₹150 (₹10K budget ÷ 66 users). Through organic/word-of-mouth = ₹0.
+                Blended CAC target: ₹150. LTV:CAC = 10.6x. For context, a healthy SaaS benchmark is
+                &gt;3x. At 10x, you can aggressively reinvest growth spend because every rupee of
+                marketing returns 10 rupees of lifetime value. The key lever: keeping churn low.
+                Every month a user stays = ₹199 net (after platform cut: ~₹170). A 6-month
+                subscriber is worth 6× a 1-month subscriber. Streak mechanics and rival system are
+                your churn defense.
+              </div>
+
+              <h3>The One Risk to Watch</h3>
+              <div class="info coral">
+                <div class="info-title">Claude API cost scaling</div>
+                At 10K daily duels with AI review for all (free tier gets 24h delayed review — still
+                costs us for the API call): 10K × ₹1.5 per review = ₹15,000/day = ₹4.5L/month in API
+                costs alone. This is why the free tier review is delayed (we batch it in off-peak
+                hours at lower cost) and why Pro = immediate review is the most natural paywall. At
+                Phase 3 with 50K users and Pro-only instant review, Claude API costs stay manageable
+                at ~₹80K–1.1L/month. The model works — just gate AI features deliberately behind Pro
+                and don't give away unlimited AI to free users.
+              </div>
+            </div>
+          </div>
+          <!-- end section s13 -->
         </div>
         <!-- end .content -->
       </main>
